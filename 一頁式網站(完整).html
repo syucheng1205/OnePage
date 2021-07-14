@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: gray;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin: 0px;
+        }
+
+        .container {
+            width: 1200px;
+            height: 100%;
+            margin: auto;
+            /* background-color: red; */
+        }
+
+        nav {
+            width: 100%;
+            height: 70px;
+            background-color: gray;
+        }
+
+        nav .container {
+            display: flex;
+            align-items: center;
+        }
+
+        nav .container h1 {
+            font-size: 36px;
+            color: white;
+            padding: 5px 0;
+        }
+
+        main .banner {
+            width: 100%;
+            height: calc(100vh - 140px);
+            background-image: url(https://miro.medium.com/max/3840/0*RiT6yh-HhsWwI41A.jpeg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .links {
+            width: 100%;
+            height: 70px;
+            margin: 10px 0;
+        }
+
+        main .links .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .link {
+            width: 20%;
+            height: 100%;
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 10px 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* block1開始 */
+
+        .block1 {
+            width: 100%;
+            height: auto;
+            background-color: gray;
+            margin-top: 20px;
+        }
+
+        .block1 .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .block1 .card-actor {
+            width: 30%;
+            height: auto;
+            border-radius: 20px 20px 0 0;
+            background-color: black;
+            margin-bottom: 20px;
+        }
+
+        .block1 .card-actor .card-actor-img1 {
+            width: 100%;
+            height: 500px;
+            border-radius: 20px 20px 0 0;
+
+            background-image: url(https://upload.wikimedia.org/wikipedia/zh/thumb/6/67/800px-Harry_Potter_PoA-1-.jpg/300px-800px-Harry_Potter_PoA-1-.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin-bottom: 20px;
+        }
+
+        .block1 .card-actor .card-actor-img2 {
+            width: 100%;
+            height: 500px;
+            border-radius: 20px 20px 0 0;
+
+            background-image: url(https://sites.google.com/site/harrypotterlibary/_/rsrc/1429262672776/home/harrypeople/ron-weasley/YLqNNlOMPHa1UPthRbs7jA.jpg?height=400&width=299);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin-bottom: 20px;
+        }
+
+        .block1 .card-actor .card-actor-text {
+            padding: 20px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .block1 .card-actor .card-actor-img3 {
+            width: 100%;
+            height: 500px;
+            border-radius: 20px 20px 0 0;
+
+            background-image: url(https://upload.wikimedia.org/wikipedia/zh/thumb/5/57/Hermione_poster_detail.jpg/200px-Hermione_poster_detail.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin-bottom: 20px;
+        }
+
+        /* block1結束 */
+
+        .block2 {
+            width: 100%;
+            height: 80vh;
+            background-image: url(https://wacowla.com/wp-content/uploads//2015/06/harry-potter.jpg);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        /* block3開始 */
+
+        .block3 {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .block3-left {
+            width: 50%;
+            background-image: url(https://inmywordz.com/wp-content/uploads/20171020140851_63.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .block3-right {
+            width: 50%;
+            background-image: url(https://inmywordz.com/wp-content/uploads/20171020140851_63.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .block3-text {
+            width: 80%;
+            font-size: 20px;
+            font-weight: bold;
+            color: red;
+            margin: 150px 0;
+        }
+
+        /* block3結束 */
+
+        /* block4開始 */
+
+        .block4 {
+            width: 100%;
+            height: 100vh;
+            background-color: gray;
+        }
+
+        .block4 .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .block4-img {
+            width: 30%;
+            height: 500px;
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/J._K._Rowling_2010.jpg/220px-J._K._Rowling_2010.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+
+        }
+
+        .block4-text {
+            width: 70%;
+            color: white;
+            padding: 30px 50px;
+        }
+
+        /* block4結束 */
+
+        footer {
+            width: 100%;
+            height: 100px;
+            background-color: white;
+        }
+
+        footer .container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        footer .container .text {
+            color: black;
+        }
+
+        @media (max-width:1240px) {
+            .container {
+                width: calc(100% - 40px);
+            }
+        }
+
+
+        @media (max-width:800px) {
+            .block1 .container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .block1 .card-actor {
+                width: 100%;
+                height: auto;
+                border-radius: 20px 20px 0 0;
+                background-color: black;
+                margin-bottom: 20px;
+            }
+
+            .block3 {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .block3-left {
+                width: 100%;
+                background-image: url(https://inmywordz.com/wp-content/uploads/20171020140851_63.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .block3-right {
+                width: 100%;
+                background-image: url(https://inmywordz.com/wp-content/uploads/20171020140851_63.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .block4 .container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .block4-img {
+                width: 80%;
+                height: 500px;
+                background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/J._K._Rowling_2010.jpg/220px-J._K._Rowling_2010.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top;
+
+            }
+
+            .block4-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 80%;
+                color: white;
+                padding: 30px 50px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <h1>《哈利波特》（Harry Potter）</h1>
+        </div>
+    </nav>
+
+    <main>
+        <div class="banner"></div>
+        <div class="links">
+            <div class="container">
+                <a class="link" href="#block1">主角</a>
+                <a class="link" href="#block2">照片</a>
+                <a class="link" href="#block3">佛地魔</a>
+                <a class="link" href="#block4">作者</a>
+            </div>
+        </div>
+
+        <div class="block1">
+            <div id="block1"></div>
+            <div class="container">
+                <div class="card-actor">
+                    <div class="card-actor-img1"></div>
+                    <div class="card-actor-text">哈利·詹姆·波特（英語：Harry James
+                        Potter）是英國作家J·K·羅琳奇幻小說《哈利波特》系列中的人物，生於1980年7月31日，男主角兼三個核心人物之一。書中大部分情節講述成為了孤兒的哈利在11歲時得知自己是巫師，自此入讀霍格華茲魔法與巫術學院，並在慈祥的校長鄧不利多及其他教授的指導下學習使用魔法。哈利還發現自己在魔法世界已甚為著名，因為人人懼怕的黑魔法巫師佛地魔是殺害其父母詹姆·波特及莉莉·波特的兇手，而哈利是在其攻擊之下唯一存活的人，被稱為「那個活下來的男孩」（The
+                        Boy Who Lived）及「被選中的人」（The Chosen One）。</div>
+                </div>
+
+                <div class="card-actor">
+                    <div class="card-actor-img2"></div>
+                    <div class="card-actor-text">榮恩·衛斯理（英語：Ron
+                        Weasley），英國作家J.K.羅琳的兒童奇幻小說《哈利波特》系列中的人物，第二男主角兼三個核心人物之一。全名榮納德·畢利亞·衛斯理（英語：Ronald
+                        Bilius"Ron"Weasley，生於1980年3月1日），哈利波特好友之一，霍格華茲魔法與巫術學院學生，另一名好友是妙麗·格蘭傑。小說及電影中所有人都稱呼他「榮恩」（Ron），而非「榮納德」（Ronald）。榮恩是亞瑟·衛斯理和茉莉·衛斯理么子，上有五位哥哥：比爾、查理、派西、弗雷和喬治，下有一個妹妹：金妮。
+                    </div>
+                </div>
+
+                <div class="card-actor">
+                    <div class="card-actor-img3"></div>
+                    <div class="card-actor-text">妙麗·格蘭傑（英語：Hermione
+                        Granger）是英國作家喬安·凱瑟琳·羅琳的奇幻小說《哈利波特》系列中的登場人物，生於1979年9月19日，女主角兼三個核心人物之一，與哈利波特和榮恩·衛斯理為摯交好友。在霍格華茲魔法與巫術學院就讀期間屬於葛萊分多學院，麻瓜出身但天賦異稟又勤奮好學，被認為是同齡中最出色的女巫；畢業後進入魔法部，現任魔法部部長。
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block2">
+            <div id="block2"></div>
+        </div>
+
+        <div class="block3">
+            <div id="block3"></div>
+            <div class="block3-left">
+                <div class="block3-text">佛地魔（英語：Lord Voldemort），原名湯姆·魔佛羅·瑞斗（Tom Marvolo
+                    Riddle）[a]，是英國作家J·K·羅琳的魔幻小說《哈利波特》系列中的虛構人物，是小說中「史上最危險的巫師」。驕傲自負，首次與哈利對決時，數次冷嘲熱諷。認為麻瓜後代不該存在。
+                    追求最強的慾望，為了接骨木魔杖的使用權而殺了賽佛勒斯·石內卜，然而魔杖是屬於哈利波特，死神的聖物I中在馬份莊園奪取跩哥·馬份的魔杖的哈利波特（在這之前，接骨木魔杖的主人是跩哥·馬份，因為他在第六集對阿不思·鄧不利多施繳械咒，因此魔杖主人意外變成跩哥·馬份的），本來就不是屬於賽佛勒斯·石內卜的，於與哈利的最後一次交鋒，用索命咒遭接骨木魔杖反彈，而死在自己追求最強的慾望上。
+                    害怕死亡，故將自己的靈魂撕裂為六個分靈體——「湯姆·瑞斗的日記」、「魔佛羅·剛特的戒指」、「薩拉札‧史萊哲林的小金匣」、「海加·赫夫帕夫的金杯」、「羅威娜·雷文克勞的王冠」、「妖蛇娜吉妮」，但卻在殺害嬰兒時期的哈利時無意間創造第七個分靈體－哈利波特。在最後幾部小說中佛地魔的分靈體陸續被破壞，佛地魔又在禁忌森林邊緣以索命咒攻擊哈利波特時，銷毀了先前佛地魔意外留在哈利體內的分靈，而哈利本身反而逃過一劫。最終佛地魔和哈利以魔杖進行決鬥，期間奈威·隆巴頓殺死了作為佛地魔最後一個分靈體的大蛇娜吉妮，當佛地魔以索命咒攻擊哈利，由於此番攻擊真的會致命，佛地魔手中的接骨木魔杖因無法傷害其真正的主人哈利波特而反彈了攻擊，喪失所有分靈體的佛地魔就被自己的索命咒奪去了生命。
+                </div>
+            </div>
+            <div class="block3-right">
+                <div class="block3-text">
+                    佛地魔的母親是薩拉札·史萊哲林的直系後代莎柔·剛特，她使用愛情魔藥迷惑一個當地鄉紳之子老湯姆·瑞斗，與之生下了佛地魔。然而莎柔·剛特在懷孕後決定停用愛情魔藥，隨後就被清醒的丈夫硬生生拋棄。1926年的除夕夜，她在窮困潦倒下於倫敦的一家孤兒院（電影稱為伍爾斯孤兒院Wool's
+                    Orphanage）內產下兒子，並在過世前告訴護士長柯爾太太要給他取名叫湯姆（丈夫的名字）·魔佛羅（父親的名字）·瑞斗（丈夫的姓）。但佛地魔很不喜歡自己的名字，認為這個名字令他與常人無異，故將他的名字中的字母重組，把「TOM
+                    MARVOLO RIDDLE」（湯姆·魔佛羅·瑞斗）改成「I AM LORD VOLDEMORT」（我是佛地魔王）[a]。
+                    這個名字只有阿不思·鄧不利多、哈利波特及麥米奈娃等少數人敢說，且鄧不利多在面對他時會直接叫他湯姆，哈利則在《哈利波特—死神的聖物》中的最後對決時直言不諱地叫他瑞斗，也就是他的姓（在西方國家，人們通常以姓氏稱呼生人或仇人）。根據第七集所述，佛地魔王在他的名字上下了咒，所有唸的人會被追蹤到，因此大部分人不敢直呼其名也是有道理的。
+                    由於西碧·崔老妮預言鳳凰會中一對夫婦的兒子有能力打敗佛地魔，他在與哈利的數次交鋒中，一直都想置哈利於死地，但終究因無止境的追求與強大的慾望而自斃。</div>
+            </div>
+        </div>
+
+        <div class="block4">
+            <div id="block4"></div>
+            <div class="container">
+                <div class="block4-img"></div>
+                <div class="block4-text">
+                    <h1>J·K·羅琳</h1>
+                    <p>喬安娜·羅琳，CH，OBE，HonFRSE，FRCPE，FRSL（英語：Joanne Rowling，1965年7月31日－
+                        ），筆名J·K·羅琳（英語：J. K. Rowling）及羅柏特·加爾布雷斯（英語：Robert
+                        Galbraith），英國小說家、電影編劇及製片人，代表作為《哈利波特》系列作品]。她的《哈利波特》暢銷全球，熱賣超過4億本，成為史上最暢銷的書籍之一；其同名改編電影也成為電影史上票房收入最高的電影之一。該系列電影獲得羅琳的完整授權，她還親自擔任《哈利波特－死神的聖物（上）》和《哈利波特－死神的聖物（下）》的電影監製。
+                        J.K·羅琳生於英國格洛斯特郡葉特。1990年，當她在一班從曼徹斯特開往倫敦的誤點列車上想到《哈利波特》小說靈感時，她是國際特赦組織的研究員兼雙語秘書。撰寫《哈利波特－神秘的魔法石》期間，羅琳經歷貧窮、母親過世與首次離婚，終於在1997年出版《哈利波特》系列小說的第一本。其後續集逐年出版，最後一部《哈利波特－死神的聖物》在2007年出版，宣告完結。羅琳的下一部作品與成名作完全不同，乃是面向成人讀者的悲喜劇小說《臨時空缺》，於2012年出版；2013年又以筆名「羅柏特·加爾布雷斯」（Robert
+                        Galbraith）出版犯罪小說《杜鵑的呼喚》，羅琳表示此作將會發展成為系列小說。</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="text">
+                    <h1>by syu 2021/04/13</h1>
+                    <p>此網頁為練習用，所有素材皆來自網路</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
